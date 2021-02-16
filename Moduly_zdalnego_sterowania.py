@@ -22,11 +22,11 @@ while True:
 
     polecenie = r.recognize_google(wypowiedziane_słowo, language="pl-PL")
         
-    if polecenie == "włącz lampę":
+    if polecenie == "Włącz lampę":
         GPIO.output(14, GPIO.LOW)
                         
-    if polecenie == "wyłącz lampę":
-        GPIO.output(14, GPIO.LOW)
+    if polecenie == "Wyłącz lampę":
+        GPIO.output(14, GPIO.HIGH)
    
     polecenie = ""
 
